@@ -3,25 +3,21 @@ import java.util.*;
 
 //  TC: O(n^2) | SC: O(1)
 
-public class BubbleSort {
-
-    public static int[] bubbleSort(int[] nums){
+public class InsertionSort {
+    public static int[] insertionSort(int[] nums){
 
         int n = nums.length;
-        for (int i = 0; i < n - 1; i++) {
-            boolean flag = true;
-            for(int j=0; j<n-1-i; j++){
-                if(nums[j]>nums[j+1]){
-                    int temp = nums[j];
-                    nums[j] = nums[j+1];
-                    nums[j+1] = temp;
-                    flag = false;
-                }
-                if(flag) break;
+        for(int i=1; i<n; i++){
+            int temp = nums[i];
+            int j = i-1;
+            while(j>=0 && nums[j]>temp){
+                nums[j+1] = nums[j];
+                j--;
             }
+            nums[j+1] = temp;
         }
 
-      return nums;
+        return nums;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -34,7 +30,7 @@ public class BubbleSort {
         }
 
         System.out.println("Before: " + Arrays.toString(nums));
-        int[] result = bubbleSort(nums);
+        int[] result = insertionSort(nums);
         System.out.println("After: " +Arrays.toString(result));
     }
 }
