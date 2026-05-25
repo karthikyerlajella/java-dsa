@@ -1,22 +1,22 @@
 package p2_sorting;
 import java.util.*;
 
-//  TC: O(n^2) | SC: O(1)
+public class RecursiveBubbleSort {
 
-public class InsertionSort {
-    public static void insertionSort(int[] nums){
+    public static void recursiveBubbleSort(int[] nums, int n){
 
-        int n = nums.length;
-        for(int i=1; i<n; i++){
-            int temp = nums[i];
-            int j = i-1;
-            while(j>=0 && nums[j]>temp){
-                nums[j+1] = nums[j];
-                j--;
+        if (n==1) return;
+
+        for(int j=0; j<n-2; j++){
+            if(nums[j]>nums[j+1]){
+                int temp = nums[j];
+                nums[j] = nums[j+1];
+                nums[j+1] = temp;
             }
-            nums[j+1] = temp;
-        }
 
+            recursiveBubbleSort(nums, n-1);
+
+        }
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -29,7 +29,7 @@ public class InsertionSort {
         }
 
         System.out.println("Before: " + Arrays.toString(nums));
-        insertionSort(nums);
+        recursiveBubbleSort(nums, n);
         System.out.println("After: " +Arrays.toString(nums));
 
         sc.close();
