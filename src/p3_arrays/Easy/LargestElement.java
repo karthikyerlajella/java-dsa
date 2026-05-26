@@ -1,5 +1,7 @@
 package p3_arrays.Easy;
 
+//  TC: O(n) | SC: O(1)
+
 public class LargestElement {
 
     public static int largestElement(int[] nums, int n){
