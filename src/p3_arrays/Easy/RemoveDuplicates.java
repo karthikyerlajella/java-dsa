@@ -1,7 +1,7 @@
 package p3_arrays.Easy;
 
 //  LeetCode: 26. Remove Duplicates from Sorted Array
-//  TC: O() | SC: O()
+//  TC: O(n) | SC: O(1)
 
 public class RemoveDuplicates {
 

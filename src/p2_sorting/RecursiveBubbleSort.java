@@ -1,7 +1,7 @@
 package p2_sorting;
 import java.util.*;
 
-//  TC: O(n^2) | SC: O(n)
+//  TC: O(n^2) | SC: O(1)
 
 public class RecursiveBubbleSort {
 
