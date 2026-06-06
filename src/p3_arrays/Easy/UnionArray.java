@@ -1,7 +1,5 @@
 package p3_arrays.Easy;
 import java.util.ArrayList;
-import java.util.TreeSet;
-
 public class UnionArray {
 
     public static ArrayList<Integer> unionArray(int[] nums1, int[] nums2){
