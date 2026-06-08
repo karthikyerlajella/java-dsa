@@ -19,7 +19,7 @@ public class SearchInLL {
         int val = 140;
         int result = getLength(head,val);
         if(result == 1) System.out.println(val + " is Found");
-
+        else System.out.println(val + " is Not Found");
 
     }
 }
