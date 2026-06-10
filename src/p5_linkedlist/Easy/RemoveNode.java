@@ -74,11 +74,11 @@ public class RemoveNode {
 
         // Node temp = removeHead(head);
 
-        // int k = 1;
-        // Node temp = removePosition(head, k);
-
-        int val = 10;
-        Node temp = removeValue(head, val);
+         int k = 1;
+         Node temp = removePosition(head, k);
+//
+//        int val = 10;
+//        Node temp = removeValue(head, val);
 
         while(temp != null){
             System.out.print(temp.data + " -> ");
