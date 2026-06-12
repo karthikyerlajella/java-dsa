@@ -1,4 +1,4 @@
-package p5_linkedlist.SingleLL;
+package p5_linkedlist.Easy;
 import p5_linkedlist.Node;
 
 //  LeetCode: 141. Linked List Cycle
