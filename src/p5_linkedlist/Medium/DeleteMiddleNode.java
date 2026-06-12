@@ -1,4 +1,4 @@
-package p5_linkedlist.Easy;
+package p5_linkedlist.Medium;
 import p5_linkedlist.Node;
 
 //  LeetCode: 2095. Delete the Middle Node of a Linked List
