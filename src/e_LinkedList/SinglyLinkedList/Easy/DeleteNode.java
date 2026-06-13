@@ -3,9 +3,9 @@ package e_LinkedList.SinglyLinkedList.Easy;
 
 import e_LinkedList.SinglyLinkedList.Node;
 
-public class RemoveNode {
+public class DeleteNode {
 
-    // Remove Head of the LL
+    // Delete Head of the LL
     public static Node removeHead(Node head) {
         if(head == null) return head;
         Node temp = head;
@@ -13,7 +13,7 @@ public class RemoveNode {
         return head;
     }
 
-    // Remove Tail of the LL
+    // Delete Tail of the LL
     public static Node removeTail(Node head) {
         if(head == null || head.next == null ) return null;
 
@@ -25,7 +25,7 @@ public class RemoveNode {
         return head;
     }
 
-    // Remove at Position of the LL
+    // Delete at Position of the LL
     public static Node removePosition(Node head, int k) {
         if(head == null) return head;
 
@@ -50,7 +50,7 @@ public class RemoveNode {
         return head;
     }
 
-    // Remove value of the LL
+    // Delete value of the LL
     public static Node removeValue(Node head, int val) {
 
         while (head != null && head.data == val) {
@@ -75,7 +75,7 @@ public class RemoveNode {
 
         // Node temp = removeHead(head);
 
-         int k = 1;
+         int k = 4;
          Node temp = removePosition(head, k);
 //
 //        int val = 10;
