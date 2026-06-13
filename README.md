@@ -1,48 +1,206 @@
-## Source : [Striver's A2Z Sheet - Learn DSA from A to Z](https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z)
+# Java DSA Journey 🚀
 
-# src/
+A structured **Data Structures & Algorithms** repository built using **Java**, following **Striver's A2Z DSA Sheet** and a topic-wise learning approach.
 
-Source code for DSA problems in Java.
+This repository documents my journey of mastering problem-solving, strengthening core computer science fundamentals, and preparing for software engineering interviews.
 
-## Structure
+---
 
-```
+## 🎯 Goal
+
+* Build strong problem-solving skills
+* Master Data Structures & Algorithms in Java
+* Prepare for Software Development Engineer (SDE) interviews
+* Develop consistency through daily coding practice
+* Track progress throughout my DSA journey
+
+---
+
+## 📚 Learning Roadmap
+
+This repository follows a structured progression:
+
+### ✅ Completed / In Progress
+
+* Foundations
+* Sorting Algorithms
+* Arrays
+* Strings
+* Linked Lists
+
+### 🔜 Upcoming
+
+* Recursion
+* Binary Search
+* Stack
+* Queue
+* Hashing
+* Trees
+* Binary Search Trees
+* Heaps
+* Graphs
+* Dynamic Programming
+* Tries
+
+---
+
+## 🗂️ Repository Structure
+
+```text
 src/
-├── a_Foundations/      # Math basics (GCD, Prime, Fibonacci)
-├── b_Sorting-techniques/  # Sorting (Bubble, Merge, Quick)
+├── a_Foundations
+├── b_Sorting
+├── c_Arrays
+│   └── Easy
+├── d_Strings
+│   └── Easy
+├── e_LinkedList
+│   ├── SinglyLinkedList
+│   └── DoublyLinkedList
 ```
 
-## How to Compile & Run
+---
 
-### Single file:
-```
-cd src
-javac 01_foundations/CountDigits.java
-java 02_Foundations.CountDigits
-```
+## 📈 Progress Tracker
 
-### Using IDE (VS Code / IntelliJ):
-1. Open the folder in your IDE
-2. Open any `.java` file
-3. Click Run (or press Ctrl+Shift+F10 in IntelliJ)
+| Topic               | Status |
+| ------------------- | ------ |
+| Foundations         | ✅      |
+| Sorting             | ✅      |
+| Arrays              | ✅      |
+| Strings             | 🚧     |
+| Linked Lists        | 🚧     |
+| Recursion           | ⏳      |
+| Binary Search       | ⏳      |
+| Stack               | ⏳      |
+| Queue               | ⏳      |
+| Trees               | ⏳      |
+| Graphs              | ⏳      |
+| Dynamic Programming | ⏳      |
 
-## File Naming
+**Legend:**
 
-- `ProblemName.java` — One problem per file
-- Example: `TwoSum.java`, `MergeSort.java`, `LongestSubstring.java`
+* ✅ Completed
+* 🚧 In Progress
+* ⏳ Planned
 
-## Code Style
+---
 
-- Clean, readable code
-- No verbose comments
-- Time & Space complexity in class header (optional)
+## 🧠 Problem Solving Approach
 
-Example:
-```java
-// Two Sum | O(n) time, O(n) space
-class TwoSum {
-    public int[] solve(int[] nums, int target) {
-        // implementation
-    }
-}
-```
+For every problem, I try to follow:
+
+1. Understand the problem statement
+2. Identify brute-force solution
+3. Optimize the approach
+4. Analyze Time Complexity
+5. Analyze Space Complexity
+6. Implement clean and readable Java code
+
+Whenever applicable, solutions may include:
+
+* Brute Force Approach
+* Better Approach
+* Optimal Approach
+
+---
+
+## ⚡ Technologies Used
+
+* Java
+* IntelliJ IDEA
+* Git
+* GitHub
+
+---
+
+## 📖 Topics Covered
+
+### Foundations
+
+* Basic Mathematics
+* Number Operations
+* Pattern Problems
+* Time Complexity Basics
+
+### Sorting
+
+* Selection Sort
+* Bubble Sort
+* Insertion Sort
+
+### Arrays
+
+* Largest Element
+* Second Largest Element
+* Check Sorted Array
+* Remove Duplicates
+* Move Zeroes
+* Missing Number
+* Union of Arrays
+* And more...
+
+### Strings
+
+* Basic String Manipulation
+* Character Operations
+
+### Linked Lists
+
+* Singly Linked List
+* Doubly Linked List
+* Insertion Operations
+* Deletion Operations
+* Traversal
+
+---
+
+## 💡 Why This Repository?
+
+Most repositories only store solutions.
+
+This repository focuses on:
+
+* Learning DSA systematically
+* Writing clean Java code
+* Understanding patterns
+* Building interview-ready problem-solving skills
+* Tracking long-term progress
+
+---
+
+## 🎓 Current Learning Status
+
+Bachelor of Information Technology Student
+
+Actively preparing for:
+
+* Software Development Engineer (SDE) Roles
+* Coding Interviews
+* Placement Preparation
+
+---
+
+## 🤝 Contributions
+
+This repository is primarily maintained for learning purposes.
+
+Suggestions, optimizations, and improvements are always welcome.
+
+---
+
+## ⭐ Connect With Me
+
+### GitHub
+
+https://github.com/prakashsalapu
+
+### LinkedIn
+
+https://linkedin.com/in/prakashsalapu
+
+---
+
+### If you find this repository useful, consider giving it a ⭐.
+
+It motivates me to continue documenting and improving my DSA journey.
