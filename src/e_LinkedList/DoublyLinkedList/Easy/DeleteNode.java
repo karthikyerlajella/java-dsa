@@ -137,7 +137,7 @@ public class DeleteNode {
 //        Node temp = deleteAtHead(head);
 //        Node temp = deleteAtTail(head);
 //        Node temp = deleteAtPosition(head, 3);
-        Node temp = deleteAtValue(head, 500);
+        Node temp = deleteAtValue(head, 50);
 
         // DLL Traversal
         System.out.print("null <- ");
