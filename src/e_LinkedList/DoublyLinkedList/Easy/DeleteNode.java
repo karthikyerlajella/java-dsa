@@ -74,7 +74,41 @@ public class DeleteNode {
     }
 
     // Delete Value Node
-    public static Node deleteAtValue(Node head){
+    public static Node deleteAtValue(Node head, int val){
+
+        if(head == null) return null;
+
+        Node temp = head;
+        while(temp != null && temp.data != val){
+            temp =  temp.next;
+        }
+
+        // value not found
+        if (temp == null) {
+            return head;
+        }
+
+        Node back = temp.prev;
+        Node front = temp.next;
+
+        // For Single Node
+        if(back==null && front==null){
+            return null;
+        }
+        // For Head Node
+        if(back ==  null){
+            return deleteAtHead(head);
+        }
+        // For Tail Node
+        if(front == null){
+            return deleteAtTail(head);
+        }
+
+        back.next = front;
+        front.prev = back;
+
+        temp.next = null;
+        temp.prev = null;
 
         return head;
     }
@@ -87,7 +121,6 @@ public class DeleteNode {
         Node n2 = new Node(30);
         Node n3 = new Node(40);
         Node n4 = new Node(50);
-//        Node tail = n4;
 
         // Link them
         head.next = n1;
@@ -103,9 +136,10 @@ public class DeleteNode {
 
 //        Node temp = deleteAtHead(head);
 //        Node temp = deleteAtTail(head);
-        Node temp = deleteAtPosition(head, -3);
-//        Node temp = deleteAtValue(head);
+//        Node temp = deleteAtPosition(head, 3);
+        Node temp = deleteAtValue(head, 500);
 
+        // DLL Traversal
         System.out.print("null <- ");
         for(Node curr = temp; curr != null; curr = curr.next){
             System.out.print(curr.data + " ");
