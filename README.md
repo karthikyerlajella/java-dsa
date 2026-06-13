@@ -47,7 +47,7 @@ This repository follows a structured progression:
 ## 🗂️ Repository Structure
 
 ```text
-src/
+java-dsa/
 ├── a_Foundations
 ├── b_Sorting
 ├── c_Arrays
