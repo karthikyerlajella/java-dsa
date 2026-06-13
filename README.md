@@ -47,7 +47,8 @@ This repository follows a structured progression:
 ## 🗂️ Repository Structure
 
 ```text
-java-dsa/
+
+src/
 ├── a_Foundations
 ├── b_Sorting
 ├── c_Arrays
@@ -57,6 +58,13 @@ java-dsa/
 ├── e_LinkedList
 │   ├── SinglyLinkedList
 │   └── DoublyLinkedList
+│
+└── z_Patterns
+    ├── TwoPointers
+    ├── SlidingWindow
+    ├── PrefixSum
+    ├── Hashing
+    
 ```
 
 ---
