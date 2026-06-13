@@ -1,5 +1,4 @@
-package e_LinkedList.DoublyLinkedList.Easy;
-import e_LinkedList.DoublyLinkedList.Node;
+package e_LinkedList.DoublyLinkedList;
 
 public class Main {
     public static void main(String[] args) {
