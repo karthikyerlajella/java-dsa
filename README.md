@@ -8,8 +8,8 @@ Source code for DSA problems in Java.
 
 ```
 src/
-├── p1_foundations/      # Math basics (GCD, Prime, Fibonacci)
-├── p2_sorting-techniques/  # Sorting (Bubble, Merge, Quick)
+├── a_Foundations/      # Math basics (GCD, Prime, Fibonacci)
+├── b_Sorting-techniques/  # Sorting (Bubble, Merge, Quick)
 ```
 
 ## How to Compile & Run
