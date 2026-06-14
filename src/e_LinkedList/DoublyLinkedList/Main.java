@@ -3,9 +3,9 @@ package e_LinkedList.DoublyLinkedList;
 public class Main {
     public static void main(String[] args) {
 
-        Node one =  new Node(10);
-        Node two =  new Node(20);
-        Node three = new Node(30);
+        ListNode one =  new ListNode(10);
+        ListNode two =  new ListNode(20);
+        ListNode three = new ListNode(30);
 
         one.next = two;
         two.next = three;
@@ -13,7 +13,7 @@ public class Main {
         two.prev = one;
         three.prev = two;
 
-        Node temp = one;
+        ListNode temp = one;
 
         System.out.print("null <-> ");
         while(temp != null){

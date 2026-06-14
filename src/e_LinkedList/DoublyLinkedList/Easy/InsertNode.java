@@ -1,30 +1,30 @@
 package e_LinkedList.DoublyLinkedList.Easy;
-import e_LinkedList.DoublyLinkedList.Node;
+import e_LinkedList.DoublyLinkedList.ListNode;
 
 public class InsertNode {
 
     // Insert at Head
-    public static Node insertAtHead(Node head, int val){
+    public static ListNode insertAtHead(ListNode head, int val){
 
-        if(head == null) return new Node(val);
+        if(head == null) return new ListNode(val);
 
-        Node temp = new Node(val, null, head);
+        ListNode temp = new ListNode(val, null, head);
         head.prev = temp;
 
         return temp;
     }
 
     // Insert at Tail
-    public static Node insertAtTail(Node head, int val){
+    public static ListNode insertAtTail(ListNode head, int val){
 
-        if(head == null) return new Node(val);
+        if(head == null) return new ListNode(val);
 
-        Node temp = head;
+        ListNode temp = head;
         while(temp.next != null){
             temp = temp.next;
         }
 
-        Node curr = new Node(val);
+        ListNode curr = new ListNode(val);
         temp.next = curr;
         curr.prev = temp;
 
@@ -32,18 +32,18 @@ public class InsertNode {
     }
 
     // Insert at Position
-    public static Node insertAtPosition(Node head, int k, int val){
+    public static ListNode insertAtPosition(ListNode head, int k, int val){
 
         if(k<1) return head;
 
-        if(head == null) return new Node(val);
+        if(head == null) return new ListNode(val);
 
         if(k==1){
             return insertAtHead(head,val);
         }
 
         int count = 1;
-        Node temp  = head;
+        ListNode temp  = head;
 
         while (temp != null && count < k-1) {
           temp = temp.next;
@@ -60,7 +60,7 @@ public class InsertNode {
             return insertAtTail(head,val);
         }
 
-        Node curr = new Node(val);
+        ListNode curr = new ListNode(val);
 
         curr.next =  temp.next;
         curr.next.prev = curr;
@@ -72,7 +72,7 @@ public class InsertNode {
     }
 
     // Insert before element
-    public static Node insertBeforeElement(Node head, int val, int element){
+    public static ListNode insertBeforeElement(ListNode head, int val, int element){
 
         if(head == null) return head;
 
@@ -80,7 +80,7 @@ public class InsertNode {
             return insertAtHead(head,element);
         }
 
-        Node temp  = head;
+        ListNode temp  = head;
         while (temp.next != null && temp.next.data != val) {
             temp = temp.next;
         }
@@ -90,7 +90,7 @@ public class InsertNode {
             return head;
         }
 
-        Node curr = new Node(element);
+        ListNode curr = new ListNode(element);
 
         curr.next =  temp.next;
         curr.next.prev = curr;
@@ -104,11 +104,11 @@ public class InsertNode {
     public static void main(String[] args) {
 
         // 1.Create nodes
-        Node head = new Node(50);
-        Node n1 = new Node(40);
-        Node n2 = new Node(30);
-        Node n3 = new Node(20);
-        Node n4 = new Node(10);
+        ListNode head = new ListNode(50);
+        ListNode n1 = new ListNode(40);
+        ListNode n2 = new ListNode(30);
+        ListNode n3 = new ListNode(20);
+        ListNode n4 = new ListNode(10);
 
         // 2. Link them
         head.next = n1;
@@ -125,11 +125,11 @@ public class InsertNode {
 //        Node temp = insertAtHead(head, 100);
 //        Node temp = insertAtTail(head, 100);
 //        Node temp = insertAtPosition(head, 1, 100);
-        Node temp = insertBeforeElement(head, 10,60);
+        ListNode temp = insertBeforeElement(head, 10,60);
 
         // DLL Traversal
         System.out.print("null <- ");
-        for(Node curr = temp; curr != null; curr = curr.next){
+        for(ListNode curr = temp; curr != null; curr = curr.next){
             System.out.print(curr.data + " ");
 
             if (curr.next != null) {

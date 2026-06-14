@@ -1,10 +1,10 @@
 package e_LinkedList.DoublyLinkedList.Easy;
-import e_LinkedList.DoublyLinkedList.Node;
+import e_LinkedList.DoublyLinkedList.ListNode;
 
 public class DeleteNode {
 
     // Delete Head Node
-    public static Node deleteAtHead(Node head){
+    public static ListNode deleteAtHead(ListNode head){
 
         if(head == null || head.next == null) return null;
 
@@ -15,10 +15,10 @@ public class DeleteNode {
     }
 
     // Delete Tail Node
-    public static Node deleteAtTail(Node head){
+    public static ListNode deleteAtTail(ListNode head){
         if(head == null || head.next == null) return null;
 
-        Node temp = head;
+        ListNode temp = head;
         while(temp.next.next != null){
             temp = temp.next;
         }
@@ -28,12 +28,12 @@ public class DeleteNode {
     }
 
     // Delete Node at Position (Kth Element)
-    public static Node deleteAtPosition(Node head, int k){
+    public static ListNode deleteAtPosition(ListNode head, int k){
         if(head == null) return null;
         if(k<1) return head;
 
         int count = 0;
-        Node temp = head;
+        ListNode temp = head;
         while(temp != null){
             count++;
             if(count == k){
@@ -47,8 +47,8 @@ public class DeleteNode {
             return head;
         }
 
-        Node back = temp.prev;
-        Node front = temp.next;
+        ListNode back = temp.prev;
+        ListNode front = temp.next;
 
         // For Single Node
         if(back==null && front==null){
@@ -74,11 +74,11 @@ public class DeleteNode {
     }
 
     // Delete Value Node
-    public static Node deleteAtValue(Node head, int val){
+    public static ListNode deleteAtValue(ListNode head, int val){
 
         if(head == null) return null;
 
-        Node temp = head;
+        ListNode temp = head;
         while(temp != null && temp.data != val){
             temp =  temp.next;
         }
@@ -88,8 +88,8 @@ public class DeleteNode {
             return head;
         }
 
-        Node back = temp.prev;
-        Node front = temp.next;
+        ListNode back = temp.prev;
+        ListNode front = temp.next;
 
         // For Single Node
         if(back==null && front==null){
@@ -116,11 +116,11 @@ public class DeleteNode {
     public static void main(String[] args) {
 
         // Create nodes
-        Node head = new Node(10);
-        Node n1 = new Node(20);
-        Node n2 = new Node(30);
-        Node n3 = new Node(40);
-        Node n4 = new Node(50);
+        ListNode head = new ListNode(10);
+        ListNode n1 = new ListNode(20);
+        ListNode n2 = new ListNode(30);
+        ListNode n3 = new ListNode(40);
+        ListNode n4 = new ListNode(50);
 
         // Link them
         head.next = n1;
@@ -137,11 +137,11 @@ public class DeleteNode {
 //        Node temp = deleteAtHead(head);
 //        Node temp = deleteAtTail(head);
 //        Node temp = deleteAtPosition(head, 3);
-        Node temp = deleteAtValue(head, 50);
+        ListNode temp = deleteAtValue(head, 50);
 
         // DLL Traversal
         System.out.print("null <- ");
-        for(Node curr = temp; curr != null; curr = curr.next){
+        for(ListNode curr = temp; curr != null; curr = curr.next){
             System.out.print(curr.data + " ");
 
             if (curr.next != null) {

@@ -1,20 +1,20 @@
 package e_LinkedList.DoublyLinkedList;
 
-public class Node {
+public class ListNode {
 
     public int data;
-    public Node prev;
-    public Node next;
+    public ListNode prev;
+    public ListNode next;
 
-    public Node(){
+    public ListNode(){
 
     }
-    public Node(int data){
+    public ListNode(int data){
 
         this.data = data;
     }
 
-    public Node(int data, Node prev, Node next){
+    public ListNode(int data, ListNode prev, ListNode next){
 
         this.data = data;
         this.prev = prev;
