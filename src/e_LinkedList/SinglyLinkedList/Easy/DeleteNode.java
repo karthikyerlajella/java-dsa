@@ -1,23 +1,23 @@
 package e_LinkedList.SinglyLinkedList.Easy;
 
 
-import e_LinkedList.SinglyLinkedList.Node;
+import e_LinkedList.SinglyLinkedList.ListNode;
 
 public class DeleteNode {
 
     // Delete Head of the LL
-    public static Node removeHead(Node head) {
+    public static ListNode removeHead(ListNode head) {
         if(head == null) return head;
-        Node temp = head;
+        ListNode temp = head;
         head = head.next;
         return head;
     }
 
     // Delete Tail of the LL
-    public static Node removeTail(Node head) {
+    public static ListNode removeTail(ListNode head) {
         if(head == null || head.next == null ) return null;
 
-        Node temp = head;
+        ListNode temp = head;
         while(temp.next.next != null){
             temp = temp.next;
         }
@@ -26,7 +26,7 @@ public class DeleteNode {
     }
 
     // Delete at Position of the LL
-    public static Node removePosition(Node head, int k) {
+    public static ListNode removePosition(ListNode head, int k) {
         if(head == null) return head;
 
         if(k==1){
@@ -34,8 +34,8 @@ public class DeleteNode {
             return head;
         }
         int count = 0;
-        Node temp = head;
-        Node prev =  null;
+        ListNode temp = head;
+        ListNode prev =  null;
 
         while(temp != null){
             count++;
@@ -51,13 +51,13 @@ public class DeleteNode {
     }
 
     // Delete value of the LL
-    public static Node removeValue(Node head, int val) {
+    public static ListNode removeValue(ListNode head, int val) {
 
         while (head != null && head.data == val) {
             head = head.next;
         }
 
-        Node curr = head;
+        ListNode curr = head;
         while (curr != null && curr.next != null) {
             if (curr.next.data == val) {
                 curr.next = curr.next.next;
@@ -71,12 +71,12 @@ public class DeleteNode {
     
     public static void main(String[] args) {
 
-        Node head = new Node(10, new Node(20, new Node(30, new Node(40, null))));
+        ListNode head = new ListNode(10, new ListNode(20, new ListNode(30, new ListNode(40, null))));
 
         // Node temp = removeHead(head);
 
          int k = 4;
-         Node temp = removePosition(head, k);
+         ListNode temp = removePosition(head, k);
 //
 //        int val = 10;
 //        Node temp = removeValue(head, val);

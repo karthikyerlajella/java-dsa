@@ -1,4 +1,4 @@
-package e_LinkedList.DoublyLinkedList.Easy;
+package e_LinkedList.DoublyLinkedList.Medium;
 import e_LinkedList.DoublyLinkedList.ListNode;
 
 

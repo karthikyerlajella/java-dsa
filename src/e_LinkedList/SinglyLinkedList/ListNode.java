@@ -1,16 +1,16 @@
 package e_LinkedList.SinglyLinkedList;
 
-public class Node {
+public class ListNode {
     public int data;
-    public Node next;
+    public ListNode next;
 
-    public Node() {
+    public ListNode() {
     }
 
-    public Node(int data) {
+    public ListNode(int data) {
         this.data = data;
     }
-    public Node(int data, Node next) {
+    public ListNode(int data, ListNode next) {
         this.data = data;
         this.next = next;
     }

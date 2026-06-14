@@ -3,11 +3,11 @@ package e_LinkedList.SinglyLinkedList.Easy;
 //  LeetCode: 141. Linked List Cycle
 //  TC: O(n) | SC: O(1)
 
-import e_LinkedList.SinglyLinkedList.Node;
+import e_LinkedList.SinglyLinkedList.ListNode;
 
 public class LinkedListCycle {
 
-    public static  boolean hasCycle(Node head) {
+    public static  boolean hasCycle(ListNode head) {
         // Brute
         // HashSet<Node> set = new HashSet<>();
 
@@ -28,8 +28,8 @@ public class LinkedListCycle {
         // Optimal - Two  Pointers
         if(head == null) return false;
 
-        Node slow = head;
-        Node fast = head;
+        ListNode slow = head;
+        ListNode fast = head;
 
         while(fast != null && fast.next != null){
             slow = slow.next;
@@ -44,11 +44,11 @@ public class LinkedListCycle {
 
     public static void main(String[] args) {
 
-        Node node5 = new Node(5,null);
-        Node node4 = new Node(4, node5);
-        Node node3 = new Node(3, node4);
-        Node node2 = new Node(2, node3);
-        Node node1 = new Node(1, node2);
+        ListNode node5 = new ListNode(5,null);
+        ListNode node4 = new ListNode(4, node5);
+        ListNode node3 = new ListNode(3, node4);
+        ListNode node2 = new ListNode(2, node3);
+        ListNode node1 = new ListNode(1, node2);
 
         // Create cycle: 5 -> 3
         node5.next = node3;

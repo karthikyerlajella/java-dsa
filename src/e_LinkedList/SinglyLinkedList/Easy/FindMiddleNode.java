@@ -1,5 +1,5 @@
 package e_LinkedList.SinglyLinkedList.Easy;
-import e_LinkedList.SinglyLinkedList.Node;
+import e_LinkedList.SinglyLinkedList.ListNode;
 
 //  LeetCode: 876. Middle of the Linked List
 //  TC: O(n) | SC: O(1)
@@ -7,9 +7,9 @@ import e_LinkedList.SinglyLinkedList.Node;
 
 public class FindMiddleNode {
 
-    public static Node middleNode(Node head){
-        Node slow = head;
-        Node fast = head;
+    public static ListNode middleNode(ListNode head){
+        ListNode slow = head;
+        ListNode fast = head;
 
         while(fast != null && fast.next != null){
             slow = slow.next;
@@ -19,9 +19,9 @@ public class FindMiddleNode {
         return slow;
     }
     public static void main(String[] args) {
-        Node head = new Node(1, new Node(1, new Node(3, new Node(4, new Node(5, null)))));
+        ListNode head = new ListNode(1, new ListNode(1, new ListNode(3, new ListNode(4, new ListNode(5, null)))));
 
-        Node temp = middleNode(head);
+        ListNode temp = middleNode(head);
 
         while(temp != null){
             System.out.print(temp.data + " -> ");

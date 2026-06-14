@@ -1,11 +1,11 @@
 package e_LinkedList.SinglyLinkedList.Easy;
 
-import e_LinkedList.SinglyLinkedList.Node;
+import e_LinkedList.SinglyLinkedList.ListNode;
 
 public class SearchInLL {
 
-    public static int searchKey(Node head, int key) {
-        Node temp = head;
+    public static int searchKey(ListNode head, int key) {
+        ListNode temp = head;
         while(temp != null){
             if(temp.data == key) return 1;
             temp = temp.next;
@@ -15,7 +15,7 @@ public class SearchInLL {
 
     public static void main(String[] args) {
 
-        Node head = new Node(10, new Node(20, new Node(30, new Node(40, null))));
+        ListNode head = new ListNode(10, new ListNode(20, new ListNode(30, new ListNode(40, null))));
         int key = 140;
         int result = searchKey(head,key);
         if(result == 1) System.out.println(key + " is Found");

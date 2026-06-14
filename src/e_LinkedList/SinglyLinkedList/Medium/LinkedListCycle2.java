@@ -1,13 +1,13 @@
 package e_LinkedList.SinglyLinkedList.Medium;
 
-import e_LinkedList.SinglyLinkedList.Node;
+import e_LinkedList.SinglyLinkedList.ListNode;
 
 //  LeetCode: 142. Linked List Cycle 2
 //  TC: O(n) | SC: O(1)
 
 public class LinkedListCycle2 {
 
-    public static Node detectCycle(Node head) {
+    public static ListNode detectCycle(ListNode head) {
 
         if (head == null || head.next == null) return null;
 
@@ -27,15 +27,15 @@ public class LinkedListCycle2 {
 
         // Optimal - Two Pointers
 
-        Node slow = head;
-        Node fast = head;
+        ListNode slow = head;
+        ListNode fast = head;
 
         while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
 
             if (slow == fast) {
-                Node temp = head;
+                ListNode temp = head;
                 while (temp != slow) {
 
                     temp = temp.next;
@@ -53,16 +53,16 @@ public class LinkedListCycle2 {
 
     public static void main(String[] args) {
 
-        Node node5 = new Node(5, null);
-        Node node4 = new Node(4, node5);
-        Node node3 = new Node(3, node4);
-        Node node2 = new Node(2, node3);
-        Node node1 = new Node(1, node2);
+        ListNode node5 = new ListNode(5, null);
+        ListNode node4 = new ListNode(4, node5);
+        ListNode node3 = new ListNode(3, node4);
+        ListNode node2 = new ListNode(2, node3);
+        ListNode node1 = new ListNode(1, node2);
 
         // Create cycle: 5 -> 3
         node5.next = node3;
 
-        Node cycleStart = detectCycle(node1);
+        ListNode cycleStart = detectCycle(node1);
 
         if (cycleStart != null) {
             System.out.println("Cycle starts at node: " + cycleStart.data);

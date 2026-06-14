@@ -1,24 +1,24 @@
 package e_LinkedList.SinglyLinkedList.Easy;
 
-import e_LinkedList.SinglyLinkedList.Node;
+import e_LinkedList.SinglyLinkedList.ListNode;
 
 public class InsertNode {
 
     // Insert at Head
-    public static Node insertAtHead(Node head, int val){
-        Node temp = new Node(val, head);
+    public static ListNode insertAtHead(ListNode head, int val){
+        ListNode temp = new ListNode(val, head);
         return temp;
     }
 
     // Insert at Tail
-    public static Node insertAtTail(Node head, int val){
+    public static ListNode insertAtTail(ListNode head, int val){
 
         if(head == null){
-            return new Node(val,null);
+            return new ListNode(val,null);
         }
 
-        Node curr = new Node(val, null);
-        Node temp = head;
+        ListNode curr = new ListNode(val, null);
+        ListNode temp = head;
 
         while(temp.next != null){
             temp = temp.next;
@@ -28,7 +28,7 @@ public class InsertNode {
     }
 
     // Insert at Position
-    public static Node insertAtPosition(Node head, int pos, int val){
+    public static ListNode insertAtPosition(ListNode head, int pos, int val){
 
         if(pos < 1){
             System.out.println("Enter Valid Position..");
@@ -36,16 +36,16 @@ public class InsertNode {
         }
 
         if(pos == 1){
-            return new Node(val,head);
+            return new ListNode(val,head);
         }
 
         int count  = 0;
-        Node temp = head;
+        ListNode temp = head;
 
         while(temp != null){
             count++;
             if(count == (pos-1)){
-                Node newNode = new Node(val, null);
+                ListNode newNode = new ListNode(val, null);
                 newNode.next = temp.next;
                 temp.next = newNode;
                 break;
@@ -57,19 +57,19 @@ public class InsertNode {
     }
 
     // Insert before element
-    public static Node insertBeforeElement(Node head, int val, int element){
+    public static ListNode insertBeforeElement(ListNode head, int val, int element){
 
         if(head == null) return null;
 
         if(head.data == element){
-            return new Node(val,head);
+            return new ListNode(val,head);
         }
 
-        Node temp = head;
+        ListNode temp = head;
 
         while(temp.next != null){
             if(temp.next.data == element){
-                Node newNode = new Node(val, null);
+                ListNode newNode = new ListNode(val, null);
                 newNode.next = temp.next;
                 temp.next = newNode;
                 break;
@@ -82,12 +82,12 @@ public class InsertNode {
 
 
     public static void main(String[] args) {
-        Node head = new Node(7, new Node(1, new Node(2, new Node(3, null))));
+        ListNode head = new ListNode(7, new ListNode(1, new ListNode(2, new ListNode(3, null))));
 
 //        Node temp = insertAtHead(head, 100);
 //        Node temp = insertAtTail(head, 4);
 //        Node temp = insertAtPosition(head, 3, 5);
-        Node temp = insertBeforeElement(head, 5, 20);
+        ListNode temp = insertBeforeElement(head, 5, 20);
 
         while(temp != null){
             System.out.print(temp.data + " -> ");
