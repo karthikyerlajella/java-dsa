@@ -32,27 +32,84 @@ public class InsertNode {
     }
 
     // Insert at Position
-    public static Node insertAtPosition(Node head, int pos, int val){
+    public static Node insertAtPosition(Node head, int k, int val){
 
-        return null;
+        if(k<1) return head;
+
+        if(head == null) return new Node(val);
+
+        if(k==1){
+            return insertAtHead(head,val);
+        }
+
+        int count = 1;
+        Node temp  = head;
+
+        while (temp != null && count < k-1) {
+          temp = temp.next;
+          count++;
+        }
+
+        // k > length + 1
+        if(temp == null){
+            return head;
+        }
+
+        // tail node
+        if(temp.next == null){
+            return insertAtTail(head,val);
+        }
+
+        Node curr = new Node(val);
+
+        curr.next =  temp.next;
+        curr.next.prev = curr;
+
+        temp.next = curr;
+        curr.prev = temp;
+
+        return head;
     }
 
     // Insert before element
     public static Node insertBeforeElement(Node head, int val, int element){
 
-        return null;
+        if(head == null) return head;
+
+        if(head.data == val){
+            return insertAtHead(head,element);
+        }
+
+        Node temp  = head;
+        while (temp.next != null && temp.next.data != val) {
+            temp = temp.next;
+        }
+
+        if (temp.next == null) {
+            return head;
+        }
+
+        Node curr = new Node(element);
+
+        curr.next =  temp.next;
+        curr.next.prev = curr;
+
+        temp.next = curr;
+        curr.prev = temp;
+
+        return head;
     }
 
     public static void main(String[] args) {
 
         // 1.Create nodes
-        Node head = new Node(5);
-        Node n1 = new Node(4);
-        Node n2 = new Node(3);
-        Node n3 = new Node(2);
-        Node n4 = new Node(1);
+        Node head = new Node(50);
+        Node n1 = new Node(40);
+        Node n2 = new Node(30);
+        Node n3 = new Node(20);
+        Node n4 = new Node(10);
 
-        // 2.Link them
+        // 2. Link them
         head.next = n1;
         n1.prev = head;
         n1.next = n2;
@@ -63,13 +120,11 @@ public class InsertNode {
         n4.prev = n3;
         n4.next = null;
 
-        // Tail Node
-        Node tail = n4;
 
 //        Node temp = insertAtHead(head, 100);
-        Node temp = insertAtTail(head, 100);
-//        Node temp = insertAtPosition(head, 3, 100);
-//        Node temp = insertBeforeElement(head, 5, 20);
+//        Node temp = insertAtTail(head, 100);
+//        Node temp = insertAtPosition(head, 1, 100);
+        Node temp = insertBeforeElement(head, 10,60);
 
         // DLL Traversal
         System.out.print("null <- ");
