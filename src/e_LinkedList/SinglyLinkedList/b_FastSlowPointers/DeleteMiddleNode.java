@@ -1,8 +1,11 @@
 package e_LinkedList.SinglyLinkedList.b_FastSlowPointers;
 import e_LinkedList.SinglyLinkedList.ListNode;
 
-//  LeetCode: 2095. Delete the Middle Node of a Linked List
-//  TC: O(n) | SC: O(1)
+/*
+    LeetCode: 2095. Delete the Middle Node of a Linked List
+    Difficulty: Medium
+    TC: O(N) | SC: O(1)
+*/
 
 public class DeleteMiddleNode {
 
