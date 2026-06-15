@@ -2,9 +2,9 @@ package e_LinkedList.SinglyLinkedList.a_BasicOperations;
 import e_LinkedList.SinglyLinkedList.ListNode;
 
 /*
- LeetCode: 203. Remove Linked List Elements
- Difficulty: Easy
- TC: O(N) | SC: O(1)
+    LeetCode: 203. Remove Linked List Elements
+    Difficulty: Easy
+    TC: O(N) | SC: O(1)
 */
 
 public class RemoveElements {
