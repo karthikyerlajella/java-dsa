@@ -1,4 +1,4 @@
-package e_LinkedList.SinglyLinkedList.Medium;
+package e_LinkedList.SinglyLinkedList.b_FastSlowPointers;
 import e_LinkedList.SinglyLinkedList.ListNode;
 
 public class LengthOfLoop {

@@ -1,4 +1,4 @@
-package e_LinkedList.DoublyLinkedList.Medium;
+package e_LinkedList.DoublyLinkedList.b_Reversal;
 import e_LinkedList.DoublyLinkedList.ListNode;
 
 

@@ -1,4 +1,4 @@
-package e_LinkedList.SinglyLinkedList.Easy;
+package e_LinkedList.SinglyLinkedList.c_Reversal;
 import e_LinkedList.SinglyLinkedList.ListNode;
 
 public class ReverseSLL {

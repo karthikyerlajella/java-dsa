@@ -1,4 +1,4 @@
-package e_LinkedList.DoublyLinkedList.Easy;
+package e_LinkedList.DoublyLinkedList.a_BasicOperations;
 import e_LinkedList.DoublyLinkedList.ListNode;
 
 public class Array2DLL {

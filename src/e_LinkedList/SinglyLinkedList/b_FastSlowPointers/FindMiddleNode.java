@@ -1,4 +1,4 @@
-package e_LinkedList.SinglyLinkedList.Easy;
+package e_LinkedList.SinglyLinkedList.b_FastSlowPointers;
 import e_LinkedList.SinglyLinkedList.ListNode;
 
 //  LeetCode: 876. Middle of the Linked List

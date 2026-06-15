@@ -1,4 +1,4 @@
-package e_LinkedList.SinglyLinkedList.Easy;
+package e_LinkedList.SinglyLinkedList.b_FastSlowPointers;
 
 //  LeetCode: 141. Linked List Cycle
 //  TC: O(n) | SC: O(1)
