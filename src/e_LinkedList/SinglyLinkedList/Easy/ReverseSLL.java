@@ -3,7 +3,7 @@ import e_LinkedList.SinglyLinkedList.ListNode;
 
 public class ReverseSLL {
     public static ListNode reverseList(ListNode head) {
-        if (head==null) return null;
+//        if (head==null) return null;
 
         // Brute : TC - O(2N) | SC - O(N)
         /*
@@ -24,18 +24,31 @@ public class ReverseSLL {
     */
 
         // Optimal : TC - O(N) | SC - O(1)
-        ListNode temp = head;
-        ListNode back = null;
-        while(temp != null){
-            ListNode front = temp.next;
-            temp.next = back;
+//        ListNode temp = head;
+//        ListNode back = null;
+//        while(temp != null){
+//            ListNode front = temp.next;
+//            temp.next = back;
+//
+//            back = temp;
+//            temp = front;
+//        }
+//        head = back;
+//
+//        return head;
 
-            back = temp;
-            temp = front;
+        // Recursion
+
+        if(head == null || head.next == null){
+            return head;
         }
-        head = back;
 
-        return head;
+        ListNode newHead = reverseList(head.next);
+        ListNode front = head.next;
+        front.next = head;
+        head.next = null;
+
+        return newHead;
     }
 
     public static void main(String[] args) {
