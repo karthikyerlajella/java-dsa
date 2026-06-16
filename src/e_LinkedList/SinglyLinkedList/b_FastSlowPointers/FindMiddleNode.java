@@ -1,8 +1,11 @@
 package e_LinkedList.SinglyLinkedList.b_FastSlowPointers;
 import e_LinkedList.SinglyLinkedList.ListNode;
 
-//  LeetCode: 876. Middle of the Linked List
-//  TC: O(n) | SC: O(1)
+/*
+    LeetCode: 876. Middle of the Linked List
+    Difficulty: Easy
+    TC: O(n) | SC: O(1)
+ */
 
 
 public class FindMiddleNode {
