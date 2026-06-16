@@ -1,6 +1,12 @@
 package e_LinkedList.SinglyLinkedList.b_FastSlowPointers;
 import e_LinkedList.SinglyLinkedList.ListNode;
 
+/*
+    Striver: Medium Problems of LL -> Length of loop in LL
+    Difficulty: Medium
+    TC: O(N) | SC: O(1)
+ */
+
 public class LengthOfLoop {
 
     public static int findLengthOfLoop(ListNode head) {
