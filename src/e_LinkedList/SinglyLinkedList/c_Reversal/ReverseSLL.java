@@ -1,12 +1,18 @@
 package e_LinkedList.SinglyLinkedList.c_Reversal;
 import e_LinkedList.SinglyLinkedList.ListNode;
 
+/*
+    LeetCode: 206. Reverse Linked List
+    Difficulty: Easy
+    TC: O(N) | SC: O(1)
+ */
+
 public class ReverseSLL {
     public static ListNode reverseList(ListNode head) {
-//        if (head==null) return null;
+        if (head==null) return null;
 
-        // Brute : TC - O(2N) | SC - O(N)
-        /*
+    // Brute : TC - O(2N) | SC - O(N)
+    /*
          Deque<Integer> st = new ArrayDeque<>();
 
         ListNode temp = head;
@@ -23,21 +29,8 @@ public class ReverseSLL {
         }
     */
 
-        // Optimal : TC - O(N) | SC - O(1)
-//        ListNode temp = head;
-//        ListNode back = null;
-//        while(temp != null){
-//            ListNode front = temp.next;
-//            temp.next = back;
-//
-//            back = temp;
-//            temp = front;
-//        }
-//        head = back;
-//
-//        return head;
-
-        // Recursion
+    // Recursion : TC - O(N) | SC - O(N)
+    /*
 
         if(head == null || head.next == null){
             return head;
@@ -49,6 +42,23 @@ public class ReverseSLL {
         head.next = null;
 
         return newHead;
+
+     */
+
+    // Optimal : TC - O(N) | SC - O(1)
+        ListNode temp = head;
+        ListNode back = null;
+        while(temp != null){
+            ListNode front = temp.next;
+            temp.next = back;
+
+            back = temp;
+            temp = front;
+        }
+        head = back;
+
+        return head;
+
     }
 
     public static void main(String[] args) {
