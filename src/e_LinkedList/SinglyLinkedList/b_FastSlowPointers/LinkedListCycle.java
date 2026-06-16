@@ -1,9 +1,11 @@
 package e_LinkedList.SinglyLinkedList.b_FastSlowPointers;
-
-//  LeetCode: 141. Linked List Cycle
-//  TC: O(n) | SC: O(1)
-
 import e_LinkedList.SinglyLinkedList.ListNode;
+
+/*
+    LeetCode: 141. Linked List Cycle
+    Difficulty: Easy
+    TC: O(N) | SC: O(1)
+ */
 
 public class LinkedListCycle {
 
