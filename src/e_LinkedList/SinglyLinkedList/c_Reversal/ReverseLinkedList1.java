@@ -7,7 +7,7 @@ import e_LinkedList.SinglyLinkedList.ListNode;
     TC: O(N) | SC: O(1)
  */
 
-public class ReverseSLL {
+public class ReverseLinkedList1 {
     public static ListNode reverseList(ListNode head) {
         if (head==null) return null;
 
