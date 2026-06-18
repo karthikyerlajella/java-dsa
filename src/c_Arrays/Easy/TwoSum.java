@@ -1,4 +1,4 @@
-package c_Arrays.Easy;
+package b_Sorting.Easy;
 import java.util.Arrays;
 import java.util.HashMap;
 
