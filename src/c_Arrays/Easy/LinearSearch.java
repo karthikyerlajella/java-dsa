@@ -1,4 +1,4 @@
-package b_Sorting.Easy;
+package c_Arrays.Easy;
 
 //  TC: O(n) | SC: O(1)
 

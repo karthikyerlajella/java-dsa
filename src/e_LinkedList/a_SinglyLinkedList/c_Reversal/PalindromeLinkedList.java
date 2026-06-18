@@ -1,11 +1,11 @@
-package e_LinkedList.SinglyLinkedList.c_Reversal;
-import e_LinkedList.SinglyLinkedList.ListNode;
+package e_LinkedList.a_SinglyLinkedList.c_Reversal;
+import e_LinkedList.a_SinglyLinkedList.ListNode;
 
 /*
     LeetCode: 234. Palindrome Linked List
     Difficulty: Easy
     TC: O(N) | SC: O(1)
-    Pattern : FastSlowPointers + Reversal
+    Approach : FastSlowPointers + Reversal
 */
 
 public class PalindromeLinkedList {

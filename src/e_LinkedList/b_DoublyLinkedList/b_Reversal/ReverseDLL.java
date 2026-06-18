@@ -1,5 +1,5 @@
-package e_LinkedList.DoublyLinkedList.b_Reversal;
-import e_LinkedList.DoublyLinkedList.ListNode;
+package e_LinkedList.b_DoublyLinkedList.b_Reversal;
+import e_LinkedList.b_DoublyLinkedList.ListNode;
 
 
 public class ReverseDLL {

@@ -76,53 +76,6 @@ src/
         └── b_Reversal
 ```
 
----
-
-## 📚 Topics Covered
-
-### Foundations
-
-* Basic Mathematics
-* Number Operations
-* Pattern Problems
-* Time Complexity Basics
-
-### Sorting
-
-* Selection Sort
-* Bubble Sort
-* Insertion Sort
-
-### Arrays
-
-* Traversal
-* Two Pointers
-* Sliding Window
-* Prefix Sum
-* Kadane's Algorithm
-* Matrix Problems
-
-### Strings
-
-* Two Pointers
-* Sliding Window
-
-### Linked Lists
-
-#### Singly Linked List
-
-* Basic Operations
-* Fast & Slow Pointers
-* Reversal Pattern
-* Two Pointers
-* Dummy Node Pattern
-* Merge / Sort Pattern
-* HashMap / Stack Pattern
-
-#### Doubly Linked List
-
-* Basic Operations
-* Reversal Pattern
 
 ---
 

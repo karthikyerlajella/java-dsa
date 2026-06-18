@@ -1,5 +1,5 @@
-package e_LinkedList.SinglyLinkedList.c_Reversal;
-import e_LinkedList.SinglyLinkedList.ListNode;
+package e_LinkedList.a_SinglyLinkedList.c_Reversal;
+import e_LinkedList.a_SinglyLinkedList.ListNode;
 
 /*
     LeetCode: 206. Reverse Linked List

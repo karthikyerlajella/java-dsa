@@ -1,4 +1,4 @@
-package e_LinkedList.SinglyLinkedList.a_BasicOperations;
+package e_LinkedList.a_SinglyLinkedList.a_BasicOperations;
 
 /*
     LeetCode: 707. Design Linked List

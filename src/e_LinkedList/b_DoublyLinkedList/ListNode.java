@@ -1,4 +1,4 @@
-package e_LinkedList.DoublyLinkedList;
+package e_LinkedList.b_DoublyLinkedList;
 
 public class ListNode {
 

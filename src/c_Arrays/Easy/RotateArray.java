@@ -1,4 +1,4 @@
-package b_Sorting.Easy;
+package c_Arrays.Easy;
 import java.util.Arrays;
 
 //  TC: O(n) | SC: O(1)

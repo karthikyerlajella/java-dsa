@@ -1,6 +1,6 @@
-package e_LinkedList.SinglyLinkedList.a_BasicOperations;
+package e_LinkedList.a_SinglyLinkedList.a_BasicOperations;
 
-import e_LinkedList.SinglyLinkedList.ListNode;
+import e_LinkedList.a_SinglyLinkedList.ListNode;
 
 public class GetLength {
 

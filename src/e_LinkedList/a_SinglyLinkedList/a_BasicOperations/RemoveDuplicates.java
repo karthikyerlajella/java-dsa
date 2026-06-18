@@ -1,5 +1,5 @@
-package e_LinkedList.SinglyLinkedList.a_BasicOperations;
-import e_LinkedList.SinglyLinkedList.ListNode;
+package e_LinkedList.a_SinglyLinkedList.a_BasicOperations;
+import e_LinkedList.a_SinglyLinkedList.ListNode;
 
 /*
     LeetCode: 83. Remove Duplicates from Sorted List

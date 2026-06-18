@@ -1,5 +1,5 @@
-package e_LinkedList.DoublyLinkedList.a_BasicOperations;
-import e_LinkedList.DoublyLinkedList.ListNode;
+package e_LinkedList.b_DoublyLinkedList.a_BasicOperations;
+import e_LinkedList.b_DoublyLinkedList.ListNode;
 
 public class InsertNode {
 

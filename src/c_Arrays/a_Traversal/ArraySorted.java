@@ -1,4 +1,4 @@
-package c_Arrays.Easy;
+package c_Arrays.a_Traversal;
 
 //  TC: O(N) | SC: O(1)
 

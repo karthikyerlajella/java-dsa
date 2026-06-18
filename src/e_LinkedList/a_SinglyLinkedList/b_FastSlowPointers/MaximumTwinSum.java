@@ -1,5 +1,5 @@
-package e_LinkedList.SinglyLinkedList.b_FastSlowPointers;
-import e_LinkedList.SinglyLinkedList.ListNode;
+package e_LinkedList.a_SinglyLinkedList.b_FastSlowPointers;
+import e_LinkedList.a_SinglyLinkedList.ListNode;
 
 /*
     LeetCode: 2130. Maximum Twin Sum of a Linked List
