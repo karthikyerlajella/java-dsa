@@ -1,128 +1,84 @@
 # Java DSA Journey 🚀
 
-A structured **Data Structures & Algorithms** repository built using **Java**, following **Striver's A2Z DSA Sheet** and a topic-wise learning approach.
+A structured **Data Structures & Algorithms** repository built using **Java**, focused on mastering coding interviews through **Pattern-Based Learning**.
 
-This repository documents my journey of mastering problem-solving, strengthening core computer science fundamentals, and preparing for software engineering interviews.
+This repository documents my journey of learning DSA, solving problems systematically, understanding underlying patterns, and building strong problem-solving skills for Software Development Engineer (SDE) roles.
 
 ---
 
-## 🎯 Goal
+## 🎯 Goals
 
-* Build strong problem-solving skills
 * Master Data Structures & Algorithms in Java
-* Prepare for Software Development Engineer (SDE) interviews
-* Develop consistency through daily coding practice
+* Develop strong problem-solving skills
+* Learn common coding interview patterns
+* Write clean and optimized solutions
+* Prepare for Software Engineering interviews
 * Track progress throughout my DSA journey
 
 ---
 
-## 📚 Learning Roadmap
+## 🧠 Learning Approach
 
-This repository follows a structured progression:
+Instead of only organizing problems by difficulty, this repository follows a **Pattern-Based Learning** approach.
 
-### ✅ Completed / In Progress
+Every problem is categorized by:
 
-* Foundations
-* Sorting Algorithms
-* Arrays
-* Strings
-* Linked Lists
+1. Data Structure / Topic
+2. Problem-Solving Pattern
 
-### 🔜 Upcoming
+### Examples
 
-* Recursion
-* Binary Search
-* Stack
-* Queue
-* Hashing
-* Trees
-* Binary Search Trees
-* Heaps
-* Graphs
-* Dynamic Programming
-* Tries
+| Problem                                        | Topic       | Pattern              |
+| ---------------------------------------------- | ----------- | -------------------- |
+| Two Sum II                                     | Arrays      | Two Pointers         |
+| Container With Most Water                      | Arrays      | Two Pointers         |
+| Longest Substring Without Repeating Characters | Strings     | Sliding Window       |
+| Linked List Cycle                              | Linked List | Fast & Slow Pointers |
+| Reverse Linked List                            | Linked List | Reversal             |
+| Subarray Sum Equals K                          | Arrays      | Prefix Sum           |
+
+This helps build pattern recognition, which is one of the most important skills in technical interviews.
 
 ---
 
 ## 🗂️ Repository Structure
 
 ```text
-
 src/
 ├── a_Foundations
-├── b_Sorting
-├── c_Arrays
-│   └── Easy
-├── d_Strings
-│   └── Easy
-├── e_LinkedList
-│   ├── SinglyLinkedList
-│   └── DoublyLinkedList
 │
-└── z_Patterns
-    ├── TwoPointers
-    ├── SlidingWindow
-    ├── PrefixSum
-    ├── Hashing
-    
+├── b_Sorting
+│
+├── c_Arrays
+│   ├── a_Traversal
+│   ├── b_TwoPointers
+│   ├── c_SlidingWindow
+│   ├── d_PrefixSum
+│   ├── e_KadaneAlgorithm
+│   └── f_Matrix
+│
+├── d_Strings
+│   ├── a_TwoPointers
+│   └── b_SlidingWindow
+│
+└── e_LinkedList
+    ├── SinglyLinkedList
+    │   ├── a_BasicOperations
+    │   ├── b_FastSlowPointers
+    │   ├── c_Reversal
+    │   ├── d_TwoPointers
+    │   ├── e_DummyNode
+    │   ├── f_MergeOrSort
+    │   └── g_HashMapOrStack
+    │
+    └── DoublyLinkedList
+        ├── a_BasicOperations
+        └── b_Reversal
 ```
 
 ---
 
-## 📈 Progress Tracker
-
-| Topic               | Status |
-| ------------------- | ------ |
-| Foundations         | ✅      |
-| Sorting             | ✅      |
-| Arrays              | ✅      |
-| Strings             | 🚧     |
-| Linked Lists        | 🚧     |
-| Recursion           | ⏳      |
-| Binary Search       | ⏳      |
-| Stack               | ⏳      |
-| Queue               | ⏳      |
-| Trees               | ⏳      |
-| Graphs              | ⏳      |
-| Dynamic Programming | ⏳      |
-
-**Legend:**
-
-* ✅ Completed
-* 🚧 In Progress
-* ⏳ Planned
-
----
-
-## 🧠 Problem Solving Approach
-
-For every problem, I try to follow:
-
-1. Understand the problem statement
-2. Identify brute-force solution
-3. Optimize the approach
-4. Analyze Time Complexity
-5. Analyze Space Complexity
-6. Implement clean and readable Java code
-
-Whenever applicable, solutions may include:
-
-* Brute Force Approach
-* Better Approach
-* Optimal Approach
-
----
-
-## ⚡ Technologies Used
-
-* Java
-* IntelliJ IDEA
-* Git
-* GitHub
-
----
-
-## 📖 Topics Covered
+## 📚 Topics Covered
 
 ### Foundations
 
@@ -139,59 +95,130 @@ Whenever applicable, solutions may include:
 
 ### Arrays
 
-* Largest Element
-* Second Largest Element
-* Check Sorted Array
-* Remove Duplicates
-* Move Zeroes
-* Missing Number
-* Union of Arrays
-* And more...
+* Traversal
+* Two Pointers
+* Sliding Window
+* Prefix Sum
+* Kadane's Algorithm
+* Matrix Problems
 
 ### Strings
 
-* Basic String Manipulation
-* Character Operations
+* Two Pointers
+* Sliding Window
 
 ### Linked Lists
 
-* Singly Linked List
-* Doubly Linked List
-* Insertion Operations
-* Deletion Operations
-* Traversal
+#### Singly Linked List
+
+* Basic Operations
+* Fast & Slow Pointers
+* Reversal Pattern
+* Two Pointers
+* Dummy Node Pattern
+* Merge / Sort Pattern
+* HashMap / Stack Pattern
+
+#### Doubly Linked List
+
+* Basic Operations
+* Reversal Pattern
 
 ---
 
-## 💡 Why This Repository?
+## 🧩 Problem-Solving Patterns
 
-Most repositories only store solutions.
+This repository focuses heavily on interview patterns such as:
 
-This repository focuses on:
+* Two Pointers
+* Sliding Window
+* Fast & Slow Pointers
+* Prefix Sum
+* Kadane's Algorithm
+* Reversal Pattern
+* Dummy Node Pattern
+* Merge / Sort Pattern
+* HashMap Pattern
+* Stack-Based Pattern
 
-* Learning DSA systematically
-* Writing clean Java code
-* Understanding patterns
-* Building interview-ready problem-solving skills
-* Tracking long-term progress
+Each pattern folder contains:
+
+* Pattern Notes
+* Recognition Clues
+* Generic Templates
+* Practice Problems
+* Java Implementations
 
 ---
 
-## 🎓 Current Learning Status
+## 📈 Current Progress
 
-Bachelor of Information Technology Student
+| Topic               | Status |
+| ------------------- | ------ |
+| Foundations         | ✅      |
+| Sorting             | ✅      |
+| Arrays              | 🚧     |
+| Strings             | 🚧     |
+| Linked Lists        | 🚧     |
+| Recursion           | ⏳      |
+| Binary Search       | ⏳      |
+| Stack               | ⏳      |
+| Queue               | ⏳      |
+| Trees               | ⏳      |
+| Graphs              | ⏳      |
+| Dynamic Programming | ⏳      |
+
+### Legend
+
+* ✅ Completed
+* 🚧 In Progress
+* ⏳ Planned
+
+---
+
+## 🔍 Problem Solving Workflow
+
+For every problem:
+
+1. Understand the problem statement
+2. Identify the underlying pattern
+3. Build a brute-force solution
+4. Optimize the approach
+5. Analyze Time Complexity
+6. Analyze Space Complexity
+7. Implement clean Java code
+
+Whenever applicable, solutions include:
+
+* Brute Force Approach
+* Better Approach
+* Optimal Approach
+
+---
+
+## ⚡ Tech Stack
+
+* Java
+* IntelliJ IDEA
+* Git
+* GitHub
+
+---
+
+## 🎓 Current Focus
 
 Actively preparing for:
 
 * Software Development Engineer (SDE) Roles
 * Coding Interviews
-* Placement Preparation
+* Technical Assessments
+* Campus Placements
 
 ---
 
 ## 🤝 Contributions
 
-This repository is primarily maintained for learning purposes.
+This repository is maintained primarily for learning and interview preparation.
 
 Suggestions, optimizations, and improvements are always welcome.
 
@@ -209,6 +236,6 @@ https://linkedin.com/in/prakashsalapu
 
 ---
 
-### If you find this repository useful, consider giving it a ⭐.
+### If you find this repository useful, consider giving it a ⭐
 
 It motivates me to continue documenting and improving my DSA journey.
