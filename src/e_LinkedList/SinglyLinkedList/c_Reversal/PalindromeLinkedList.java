@@ -5,6 +5,7 @@ import e_LinkedList.SinglyLinkedList.ListNode;
     LeetCode: 234. Palindrome Linked List
     Difficulty: Easy
     TC: O(N) | SC: O(1)
+    Pattern : FastSlowPointers + Reversal
 */
 
 public class PalindromeLinkedList {
