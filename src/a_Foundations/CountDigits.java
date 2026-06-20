@@ -1,16 +1,16 @@
 package a_Foundations;
 
-class CountDigits{
+public class CountDigits {
     public static void main(String[] args) {
-       int n = 982366;
-//       int count = 0;
-//       while(n!=0){
-//           count++;
-//           n=n/10;
-//       }
-//        System.out.println(count);
 
-        //using log10
-        System.out.println((int)Math.log10(n)+1);
+        int n = 778956;
+        int count = 0;
+
+        while (n > 0) {
+            n = n / 10;
+            count++;
+        }
+
+        System.out.println("Number of digits: " + count);
     }
 }
