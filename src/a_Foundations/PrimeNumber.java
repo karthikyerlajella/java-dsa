@@ -26,3 +26,28 @@ public class PrimeNumber {
         sc.close();
     }
 }
+
+
+/*
+class Solution {
+    public boolean isPrime(int n) {
+        //your code goes here
+        boolean isPrime = true;
+        if(n<=1){
+            isPrime = false;
+        }else{
+            for(int i=2;i*i <=n;i++){
+                if(n%i==0){
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+        if(isPrime){
+            return true;
+        }else{
+            return false;
+        }
+    }
+}
+*/
